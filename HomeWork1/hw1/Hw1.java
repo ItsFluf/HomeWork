@@ -5,7 +5,8 @@ import java.util.*;
 public class Hw1 {
     public static Scanner reader = new Scanner(System.in);
 	public static void main(String[] args) {
-		while (true) {
+		int cnt = 1;
+		if (!cnt == 1) {
 			System.out.println("This Program Will Ask You To Give It 3 Numbers,\nAnd It Will Output All The Possible Combinations of Those 3 Numbers. ");
 			System.out.print("Please Enter The First Number: ");
 			int FirstNum = reader.nextInt();
@@ -23,7 +24,7 @@ public class Hw1 {
 				System.out.println("[" + SecondNum + ", " + ThirdNum + ", " + FirstNum + "]");
 				System.out.println("[" + ThirdNum + ", " + FirstNum + ", " + SecondNum + "]");
 				System.out.println("[" + ThirdNum + ", " + SecondNum + ", " + FirstNum + "]");
-				break;
+				cnt = 1;
 			}
 		}
 		
